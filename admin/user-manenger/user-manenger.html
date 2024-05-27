@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user manenger</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../home/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./user-manenger.css">
+    
+</head>
+
+<body>
+    <header class="header-home">
+        <img class="header-home-photo" src="/img/image-3.png" alt="">
+        <nav class="nav-home">
+
+            <div class="nav-home-left">
+                <img src="/img/logo.png" alt="">
+
+            </div>
+            <div class="nav-home-main">
+                <img src="https://ptfitness.vn/wp-content/uploads/2020/12/phone-icon-header.png" alt="">
+                <div class="hotline">
+                    <p class="bold color-orange">HOTLINE</p>
+                    <h3 class="bold">0988 66 22 62</h3>
+                </div>
+            </div>
+            <div class="nav-home-right">
+                <ul class="nav-home-right-list">
+                    <li class="nav-home-right-item">
+                        <p class="color-white bold" href="#">Admin</p>
+                        <i class="adminIcon color-white fa-solid fa-user-tie"></i>
+                    </li>
+                    <li>
+                        <a style="text-decoration: none;" id="adminLogout" href="http://127.0.0.1:5502/login/login.html">Logout</a>
+                    </li>
+                  
+                </ul>
+                
+            </div>
+        </nav>
+    </header>
+
+    <section class="main-table">
+        <div class="admin-sidebar">
+            <ul>
+                <li><a href="/admin/admincategory/admincategory.html">Quản Lý Danh Mục</a></li>
+                <li><a href="/admin/admin-products/admin-products.html">Quản Lý Sản Phẩm</a></li>
+                <li><a href="http://127.0.0.1:5502/admin/user-manenger/user-manenger.html">Quản Lý Người Dùng</a></li>
+            </ul>
+        </div>
+        <div class="main-form">
+            <!-- <section id="form-scope" class="hidden" onsubmit="submitForm(event)">
+                <form id="form-product" class="form-product">
+                    <h4 style="text-align: center">Category</h4>
+                    <div class="scope-input">
+                        <label for="name" class="label-product">Name: </label>
+                        <input id="name" name="name" type="text" />
+                        <p style="color: red;" id="error-name"></p>
+                    </div>
+
+                    <div style="display: flex; justify-content: center; gap: 12px">
+                        <button type="button" id="btn-cancel">Cancel</button>
+                        <button type="submit" id="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </section> -->
+
+            <main style="width: 1200px; margin: 0 auto">
+                <section id="action" style="padding-top: 48px">
+                    <div style="
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    ">
+
+                        <select class="admin-table-button"  id="sortName">
+
+                            <!-- từ bé đến lớn -->
+                            <option value="aes">A > Z</option> 
+                            <!-- từ lớn đến bé -->
+                            <option value="des">Z > A</option> 
+                        </select>
+                        <div>
+                            <input type="text" id="text-search" />
+                            <button class="admin-table-button" id="btn-search">Search</button>
+                        </div>
+                    </div>
+                </section>
+                <section id="table">
+                    <div class="categories-table">
+                        QUẢN LÝ NGƯỜI DÙNG
+                    </div>
+                    <div class="table-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th width = '10%'>STT</th>
+                                    <th width = '30%'>Tên</th>
+                                    <th width = '30%'>Email</th>
+                                    <th width = '20%'>Trạng Thái</th>
+                                    <th width = '10%'>action</th>
+                                   
+                                </tr>
+                            </thead>
+                            <tbody id="tbody">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section id="pagination" style="
+                  display: flex;
+                  align-items: center;
+                  justify-content: end;
+                  gap: 24px;
+                ">
+                    <div>
+                        <select  id="page-size" onchange="changePageSize(event)">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                        </select>
+                    </div>
+                    <div class="pagination-item" style="display: flex; justify-content: end; align-items: center">
+                        <button class="admin-table-button" onclick="changePage(-1)">Previous</button>
+                        <p id="page-list"></p>
+                        <button  class="admin-table-button" onclick="changePage(1)">Next</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+    </section>
+
+
+
+    <script src="user-manenger.js"></script>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,245 @@
+.cart-checkout {
+    padding: 40px 0 50px 0;
+    color: rgb(154, 154, 154);
+    background-color: rgb(250, 250, 250);
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    width: 100%;
+    /* height: 150px; */
+}
+
+.cart-checkout-link {
+    margin: 0 10px;
+    position: relative;
+
+}
+
+.cart-checkout-link:first-child:before {
+    border-color: #000;
+    color: #fff;
+    background-color: #000;
+}
+
+.cart-checkout-link:before {
+    content: attr(data-step);
+    border: 1px solid rgb(180, 179, 179);
+    font-size: 18px;
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 7px;
+}
+
+.cart-checkout-link::after {
+    content: '';
+    display: inline-flex;
+    border-bottom: 1px solid rgb(182, 180, 180);
+    min-width: 120px;
+    vertical-align: middle;
+    margin: 0 20px;
+}
+
+.cart-checkout-link:last-child:after {
+    display: none;
+}
+
+.cart-checkout-container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    width: 100%;
+    height: 550px;
+}
+
+.table-td-photo-img {
+    width: 100px;
+}
+
+.cart-checkout-table {
+    width: 100%;
+    text-align: center;
+}
+.cart-checkout-table-div{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+table>tbody {
+    border-top: 1px solid black;
+}
+
+
+
+.h_blockcart-inner--qty {
+    display: flex;
+    align-items: center;
+    border: 1px solid #E6E7E8;
+    border-radius: 4px;
+    width: 88px;
+}
+
+.h_blockcart-inner-minus,
+.h_blockcart-inner-plus {
+    width: 28px;
+    height: 26px;
+    min-width: 28px;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.h_blockcart-inner--input {
+    width: 30px;
+    min-width: 30px;
+    text-align: center;
+    padding: 3px;
+    color: #333F48;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    height: 26px;
+    border: none;
+    background-color: transparent;
+}
+
+
+
+.cart-checkout-action {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    /* font-size: 30px; */
+
+}
+
+.cart-checkout-container-left {
+    padding: 0 10px 0 10px;
+}
+
+.cart-checkout-input {
+    width: 350px;
+    position: relative;
+    /* height: 30px; */
+}
+
+.cci-input {
+    border: 1px solid rgb(204, 203, 203);
+    width: 100%;
+    height: 35px;
+    border-radius: 15px;
+    outline: none;
+    padding-left: 20px;
+
+}
+
+.cci-btn {
+    position: absolute;
+    top: 0;
+    right: -27px;
+    width: 40px;
+    height: 35px;
+    background-color: rgb(242, 242, 242);
+    border: none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.cci-btn:hover {
+    background-color: orange;
+}
+
+.cca-btn {
+    border: 1px solid rgb(204, 203, 203);
+    background-color: white;
+    width: 200px;
+    height: 35px;
+    border-radius: 15px;
+    outline: none;
+    line-height: 20px;
+    cursor: pointer;
+}
+
+.cca-btn:hover .cca-btn-span {
+    border-bottom: 1px solid black;
+    cursor: pointer;
+}
+
+.cart-checkout-container-right {
+    /* width: 100%; */
+    padding: 0 30px;
+
+}
+
+.cart-order-bg {
+    border: 2px solid black;
+    padding: 20px;
+}
+
+.cart-order-title h3{
+    font-weight: 500;
+}
+.order-price , .transport , .total-amount{
+    display: flex;
+    justify-content: space-between;
+    line-height: 4;
+}
+.ship-status{
+    display: flex;
+    justify-content: end;
+    /* line-height: 1.5; */
+}
+.total-amount{
+    margin: 10px 0 0 0;
+    font-size: 20px;
+
+}
+.total-amount span{
+    color: black;
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.payment-order,
+.payment-plus {
+    border: 1px solid rgb(190, 190, 190);
+    /* width: 100%;
+    display: flex;
+    justify-content: center; */
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: 600;
+    line-height: 20px;
+
+
+}
+
+
+.payment-order {
+    background-color: rgb(144, 221, 64);
+    color: #ed831f;
+}
+
+.payment-order:hover {
+    color: rgb(94, 94, 94);
+    text-decoration: underline;
+    border: 1px solid rgb(144, 221, 64);
+    background-color: #fff;
+}
+.payment-plus:hover{
+    text-decoration: underline;
+}

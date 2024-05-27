@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+
+<body>
+    <section>
+        <!-- <div class="admin-sidebar">
+            <ul>
+                <li><a href="/admin/admincategory/admincategory.html">Quản Lý Danh Mục</a></li>
+                <li><a href="/admin/admin-products/admin-products.html">Quản Lý Sản Phẩm</a></li>
+                <li><a href="http://127.0.0.1:5502/admin/user-manenger/user-manenger.html">Quản Lý Người Dùng</a></li>
+            </ul>
+        </div> -->
+        <div class="main-form">
+            <!-- <section id="form-scope" class="hidden" onsubmit="submitForm(event)">
+                <form id="form-product" class="form-product">
+                    <h4 style="text-align: center">Category</h4>
+                    <div class="scope-input">
+                        <label for="name" class="label-product">Name: </label>
+                        <input id="name" name="name" type="text" />
+                        <p style="color: red;" id="error-name"></p>
+                    </div>
+
+                    <div style="display: flex; justify-content: center; gap: 12px">
+                        <button type="button" id="btn-cancel">Cancel</button>
+                        <button type="submit" id="btn-submit">Submit</button>
+                    </div>
+                </form>
+            </section> -->
+
+            <main>
+                <section>
+                    <div>
+                        <select >
+                            <option >A > Z</option>
+                            <option >Z > A</option>
+                        </select>
+                        <div>
+                            <input type="text" id="textSearch" />
+                            <button id="btnSearch">Search</button>
+                        </div>
+                    </div>
+                </section>
+                <section >
+                    <div >
+                        QUẢN LÝ NGƯỜI DÙNG
+                    </div>
+                    <div>
+                        <table border="1">
+                            <thead>
+                                <tr>
+                                    <th width='10%'>STT</th>
+                                    <th width='30%'>Tên</th>
+                                    <th width='30%'>Email</th>
+                                    <th width='20%'>Trạng Thái</th>
+                                    <th width='10%'>action</th>
+
+                                </tr>
+                            </thead>
+                            <tbody id="tBody" >
+                                <!-- <tr>
+                                    <td>1</td>
+                                    <td>quang</td>
+                                    <td>quang@gmail.com</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr> -->
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+                <section >
+                    <div>
+                        <select id="page-size" onchange="changePageSize(event)">
+                            <option value="5">5</option>
+                            <option value="10">10</option>
+                            <option value="15">15</option>
+                        </select>
+                    </div>
+                    <div >
+                        <button onclick="changePage(-1)">lùi</button>
+                        <p id="pag-list"></p>
+                        <button onclick="changePage(1)">Tiến</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <button id="sortButton" onclick="toggleSort()">Sắp xếp</button>
+
+
+    </section>
+    <script src="./test.js"></script>
+
+</body>
+
+</html>
